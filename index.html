@@ -5,110 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans">
+    <link rel="stylesheet" href="util.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="education.css">
-    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="introduction.css">
+    <link rel="stylesheet" href="introduction_animation.css">
+    <link rel="stylesheet" href="introduction_icon.css">
 </head>
 <body>
-    <navbar>
-        <a href="#home">Home</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-    </navbar>
-    <section id="home">
-        <div class="flex-col">
-            <div class="flex-row home-top">
-                <div class="home-introduction">
-                    Hi, my name is Christian Seiji!
-                </div>
-                <div class="flex-col home-contact-group">
-                    <div class="home-contact">
-                        Contacts:
-                    </div>
-                    <div>
-                        LinkedIn
-                    </div>
-                </div>
+    <div class="horizontal-flex container">
+        <nav class="navbar actual">
+            <div class="vertical-flex">
+                <a href="#" class="section-btn">
+                    About
+                </a>
+                <a href="#" class="section-btn">
+                    Experience
+                </a>
             </div>
-            <div class="home-description">
-                I do game development, frontend and backend development with exploding passion!
+        </nav>
+        <nav class="navbar positioning">
+            <div class="vertical-flex">
+                <a href="#introduction" class="section-btn">
+                    About
+                </a>
+                <a href="#" class="section-btn">
+                    Experience
+                </a>
             </div>
-        </div>
-    </section>
-    <section id="education" class="flex-col education">
-        <div class="flex-row education-card">
-            <div class="education-logo">
-                <img src="binus_logo.jpg">
-            </div>
-            <div class="flex-col education-description">
-                <div class="education-title">
-                    Bina Nusantara
+        </nav>
+        <div class="portfolio">
+            <section id="introduction" class="introduction">
+                <div class="introduction-title">
+                    Hi, My name is Christian Seiji
                 </div>
-                <div class="education-content">
-                    <div>
-                        2020-2024
+                <div class="horizontal-flex introduction-definition">
+                    <div class="introduction-definition-begins">
+                        I am a
                     </div>
-                    <div>
-                        Game Application Technology
+                    <div class="introduction-definition-defined">
+                        <div class="introduction-definition-words developer">
+                            Developer
+                        </div>
+                        <div class="introduction-definition-words fast-learner">
+                            Fast&nbsplearner
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="introduction-description">
+                    A passionate programmer who's self driven with a curious mind. Always interested to set out and solve problems
+                </div>
+                <div class="horizontal-flex introduction-contacts">
+                    <a href="https://www.linkedin.com/in/christian-seiji-725a9a1bb/">
+                        <div class=" introduction-icons introduction-linkedin">
+                        </div>
+                    </a>
+                    <a href="https://github.com/Flaze07">
+                        <div class=" introduction-icons introduction-github">
+                        </div>
+                    </a>
+                </div>
+            </section>
         </div>
-    </section>
-    <section id="projects" class="flex-row projects">
-        <div class="project-card">
-            <a href="https://gamejolt.com/games/multisnake/268447" class="project-content">
-                    <div class="project-img">
-                        <img src="project-images/snake.webp">
-                    </div>
-                    <div class="project-title">
-                        Multiplayer Snake
-                    </div>
-                    <div class="project-description">
-                        A game I made when I was in highschool in order to be played with friends
-                    </div>
-            </a>
-        </div>
-        <div class="project-card">
-            <a href="https://flaze07.itch.io/evade" class="project-content">
-                <div class="project-img">
-                    <img src="project-images/evade.png">
-                </div>
-                <div class="project-title">
-                    Evade
-                </div>
-                <div class="project-description">
-                    I made this game using D programming language and SFML library to test my capabilities  
-                </div>
-            </a>
-        </div>
-        <div class="project-card">
-            <a href="https://bgdc.itch.io/hell-dodge" class="project-content">
-                <div class="project-img">
-                    <img src="project-images/helldodge.png">
-                </div>
-                <div class="project-title">
-                    Hell Dodge
-                </div>
-                <div class="project-description">
-                    This game was made in 3 months with a fullset of team
-                </div>
-            </a>
-        </div>
-        <div class="project-card">
-            <a href="https://itch.io/jam/bgdjam-2022/rate/1758706" class="project-content">
-                <div class="project-img">
-                    <img src="project-images/bulanini.png">
-                </div>
-                <div class="project-title">
-                    Bulan Ini
-                </div>
-                <div class="project-description">
-                    This game was made with a team for a gamejam which is called bgdjam-2022
-                </div>
-            </a>
-        </div>
-    </section>
+    </div>
 </body>
 </html>

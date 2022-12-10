@@ -1,0 +1,50 @@
+.introduction {
+    background-color: #84c0f4;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-right: 100px;
+}
+
+.introduction-title {
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.introduction-definition-begins {
+    font-size: 1.75em;
+}
+
+.introduction-definition-defined {
+    position: relative;
+}
+
+.introduction-definition-begins {
+    margin-right: 10px;
+}
+
+.introduction-definition-words {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    transform: translateY(25px);
+
+    font-size: 1.5em;
+}
+
+.introduction-description {
+    margin-top: 20px;
+    font-size: 1.75em;
+}
+
+.introduction-contacts {
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.introduction-icons {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+    background-size: cover;
+}

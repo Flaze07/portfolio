@@ -1,0 +1,15 @@
+.introduction-linkedin {
+    background-image: url("./icons/linkedin.svg");
+}
+
+.introduction-linkedin:hover {
+    background-image: url("./icons/linkedin-hover.svg");
+}
+
+.introduction-github {
+    background-image: url("./icons/github.svg");
+}
+
+.introduction-github:hover {
+    background-image: url("./icons/github-hover.svg");
+}
