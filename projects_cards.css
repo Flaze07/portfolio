@@ -1,0 +1,11 @@
+label[for="project-1"] .projects-image {
+    background-image: url("./project-images/snake.webp");
+}
+
+label[for="project-2"] .projects-image {
+    background-image: url("./project-images/evade.png");
+
+    background-position: 1px -10px;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}

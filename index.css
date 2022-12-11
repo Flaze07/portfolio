@@ -2,6 +2,8 @@ body, html {
     margin: 0;
     padding: 0; 
     font-family: 'Open Sans', sans-serif;
+
+    padding-bottom: 50px;
 }
 
 .portfolio {
@@ -29,7 +31,7 @@ a {
 .section-title {
     display: flex;
     align-items: center;
-    padding-left: 100px;
+    padding-left: 50px;
     min-height: 6rem;
     
     color: white;
@@ -47,5 +49,6 @@ a {
     font-family: "Roboto", sans-serif;
     background-color: rgba(0, 0, 0, 0.01);
 
-    padding-left: 100px;
+    padding-left: 50px;
+    padding-right: 50px
 }

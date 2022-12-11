@@ -1,5 +1,8 @@
 .projects-content {
     padding-top: 50px;
+    gap: 25px;
+
+    flex-wrap: wrap;
 }
 
 .projects-card {
@@ -28,6 +31,49 @@
     }
 }
 
+@keyframes projects-detail-in {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    1% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    99%, 100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes projects-detail-out   {
+    from {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    1% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    99% {
+        opacity: 0;
+        transform: translateY(100%);
+        height: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(100%);
+        top: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
 .projects-detail {
     background-color: white;
 
@@ -41,20 +87,32 @@
 
     padding-top: 10px;
     padding-left: 10px;
+    padding-right: 10px;
     
     opacity: 0;
     transform: translateY(100%);
 
-    transition-property: all;
-    transition-duration: 0.2s;
+    /* transition-property: transform, opacity;
+    transition-duration: 0.2s; */
+}
+
+.projects-card-toggle:not(:checked) + .projects-detail {
+    animation-name: projects-detail-out;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
 
 .projects-card-toggle:checked + .projects-detail {
-    /* animation-name: projects-detail;
+    animation-name: projects-detail-in;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
-    animation-timing-function: linear; */
+    animation-timing-function: linear;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     opacity: 1;
     transform: translateY(0%);
 }
@@ -113,8 +171,8 @@
 
 .projects-links {
     position: absolute;
-    left: 20px;
-    bottom: 10px;
+    left: 30px;
+    bottom: 20px;
 
     display: flex;
     flex-direction: row;
@@ -165,7 +223,6 @@
     width: 100%;
     height: 70%;
 
-    background-image: url("./project-images/snake.webp");
     background-position: -5px -100px;
 
     cursor: pointer;
