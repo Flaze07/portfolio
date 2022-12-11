@@ -1,0 +1,187 @@
+.projects-content {
+    padding-top: 50px;
+}
+
+.projects-card {
+    position: relative;
+
+    width: 400px;
+    height: 400px;
+
+    background-color: white;
+    box-shadow: 0px 0px 10px -5px black;
+}
+
+.projects-card-toggle {
+    display: none;
+}
+
+@keyframes projects-detail {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.projects-detail {
+    background-color: white;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    
+    opacity: 0;
+    transform: translateY(100%);
+
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+.projects-card-toggle:checked + .projects-detail {
+    /* animation-name: projects-detail;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear; */
+
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.projects-close-detail {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+@keyframes projects-close-icon {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.projects-close-icon {
+    width: 25px;
+    height: 25px;
+
+    background-image: url("./icons/cross.svg");
+    background-size: contain;
+
+    cursor: pointer;
+}
+
+.projects-close-icon:hover {
+    animation-name: projects-close-icon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.projects-detail li {
+    font-size: 1.25em;
+}
+
+.projects-detail li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.projects-links {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.projects-links a .tooltip {
+    position: relative;
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+    opacity: 0;
+
+    transform: translate(-15%, -50%);
+
+    text-align: center;
+
+    transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: .2s;
+}
+
+.projects-links a:hover .tooltip {
+    opacity: 1;
+}
+
+.projects-links-result {
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("./icons/launch-link-open.svg");
+    background-size: contain;
+}
+
+.projects-links-source {
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("./icons/social-github.svg");
+    background-size: contain;
+}
+
+.projects-image {
+    width: 100%;
+    height: 70%;
+
+    background-image: url("./project-images/snake.webp");
+    background-position: -5px -100px;
+
+    cursor: pointer;
+}
+
+.projects-card-content {
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+.projects-title {
+    font-size: 1.5em;
+    color: #46a08d;
+    font-weight: 400;
+}
+
+.projects-description {
+    line-height: 1.5;
+}
