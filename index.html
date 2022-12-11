@@ -7,12 +7,18 @@
     <title>Portfolio</title>
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Open+Sans">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="util.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="introduction.css">
     <link rel="stylesheet" href="introduction_animation.css">
     <link rel="stylesheet" href="introduction_icon.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
     <div class="horizontal-flex container">
@@ -38,8 +44,13 @@
         </nav>
         <div class="portfolio">
             <section id="introduction" class="introduction">
-                <div class="introduction-title">
-                    Hi, My name is Christian Seiji
+                <div class="horizontal-flex introduction-title">
+                    <div>
+                        Hi, My name is
+                    </div>
+                    <div class="introduction-name">
+                        Christian Seiji
+                    </div>
                 </div>
                 <div class="horizontal-flex introduction-definition">
                     <div class="introduction-definition-begins">
@@ -66,6 +77,36 @@
                         <div class=" introduction-icons introduction-github">
                         </div>
                     </a>
+                </div>
+            </section>
+            <section id="about" class="about">
+                <div class="section-title">
+                    ABOUT
+                </div>
+                <div class="section-content about-content">
+                    <p>
+                        I am currently a computer science undergraduate in Binus University. I enjoy solving problems that I have via coding when it is possible. I believe I should put in 100% into anything I do. I have worked with multiple technologies in order to achieve what I have to do, unity, godot, ExpressJS, Flask, Vue, and several others.
+                    </p>
+                    <ul class="about-list">
+                        <li>
+                            <span class="about-header">
+                                Languages:
+                            </span>
+                            Python, Javascript, Typescript, C++, C#, Java, Go, HTML/CSS
+                        </li>
+                        <li>
+                            <span class="about-header">
+                                Libraries/Frameworks:
+                            </span>
+                            Flask, Vue, ExpressJS, Go-chi 
+                        </li>
+                        <li>
+                            <span class="about-header">
+                                Tool & Technologies
+                            </span>
+                            Git, Heroku, Unity, Ngrok
+                        </li>
+                    </ul>
                 </div>
             </section>
         </div>

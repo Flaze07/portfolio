@@ -1,5 +1,5 @@
 .introduction {
-    background-color: #84c0f4;
+    background-color: #a1bca9;
     padding-left: 100px;
     padding-top: 50px;
     padding-right: 100px;
@@ -8,6 +8,11 @@
 .introduction-title {
     font-size: 3em;
     margin-bottom: 50px;
+    gap: 15px;
+}
+
+.introduction-name {
+    color: #46a08d;
 }
 
 .introduction-definition-begins {
@@ -29,6 +34,8 @@
     transform: translateY(25px);
 
     font-size: 1.5em;
+
+    color: #46a08d;
 }
 
 .introduction-description {

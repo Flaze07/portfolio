@@ -1,0 +1,27 @@
+.about-content {
+    padding-right: 150px;
+    padding-top: 50px;
+
+    font-size: 1.75em;
+
+    box-sizing: border-box;
+
+    font-weight: 100;
+}
+
+.about-content p {
+    line-height:  1.6;
+}
+
+.about-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-header {
+    font-weight: 500;
+}
+
+.about-list li:not(:last-child) {
+    margin-bottom: 15px;
+}
