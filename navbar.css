@@ -14,3 +14,11 @@
     position: static;
     visibility: hidden;
 }
+
+.navbar div {
+    padding-top: 30px;
+}
+
+.navbar div a {
+    font-size: 1.5em;
+}
