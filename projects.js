@@ -71,8 +71,20 @@ const projects = [
             "<span style=\"font-weight: 800\">Tools:</span> Tauri, HTML/CSS, Javascript",
             "The interpreter runs by first parsing the entire input to search for loops, only after that, it runs the code"
         ],
-        result: "https://itch.io/jam/bgdjam-2022/rate/1758706",
-        source: "https://github.com/gitty20222/Dunia-Lain-BGDJam"
+        result: "https://github.com/Flaze07/brain-freeze/",
+        source: "https://github.com/Flaze07/brain-freeze/releases"
+    },
+    {
+        title: "Waiwaividi",
+        description: "Simple and easy to use youtube video downloader",
+        imageLink: "./project-images/waiwaividi.png",
+        imageStyle: "background-position: -1px 0px; background-size: cover;",
+        details: [
+            "<span style=\"font-weight: 800\">Tools:</span> Python, PyQT5, youtube-dl",
+            "This application receives the input url, afterwards, if the user clicks on the download button it'll download the associated video in the link"
+        ],
+        result: "https://github.com/Flaze07/waiwaividi",
+        source: "https://github.com/Flaze07/waiwaividi/releases"
     }
 ]
 
